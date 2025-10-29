@@ -199,8 +199,8 @@ if __name__ == "__main__":
         # 'etd_usk.csv',
         # 'etd_ugm.csv',
         # 'kompas.csv',
-        'tempo.csv',
-        # 'mojok.csv',
+        # 'tempo.csv',
+        'mojok.csv',
     ]
     
     for ds in datasets_to_run:
