@@ -67,8 +67,8 @@ def preprocess_query(text):
     
     tokens = text.split()
     tokens = [word for word in tokens if len(word) > 1] 
-    
-    # 5. Stopword Removal
+  
+    # 5. Stopword Removal  
     text = stopword_remover.remove(" ".join(tokens))
     
     # 6. Stemming
