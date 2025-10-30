@@ -1,6 +1,6 @@
 # Abaikan virtual environment
 UTS-PI/
-
+whoosh_index/
 
 # Abaikan file sementara
 __pycache__/
