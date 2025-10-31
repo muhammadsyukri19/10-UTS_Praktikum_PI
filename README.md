@@ -1,4 +1,4 @@
-# 🧠 Multi-Dataset Information Retrieval (CLI-Based)
+# 🧠 Implementasi Multi-Dataset Information Retrieval System (CLI-Based) Menggunakan Whoosh dan Vector Space Model
 
 ![Python](https://img.shields.io/badge/Python-3.10+-blue)
 ![Whoosh](https://img.shields.io/badge/Indexing-Whoosh-informational)
