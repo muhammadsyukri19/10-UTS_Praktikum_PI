@@ -1,14 +1,12 @@
----
-
 # 🧠 Multi-Dataset Information Retrieval (CLI-Based)
 
 ![Python](https://img.shields.io/badge/Python-3.10+-blue)
 ![Whoosh](https://img.shields.io/badge/Indexing-Whoosh-informational)
-![VSM](https://img.shields.io/badge/Model-VSM%20\(BoW\)-orange)
+![VSM](<https://img.shields.io/badge/Model-VSM%20(BoW)-orange>)
 ![Cosine](https://img.shields.io/badge/Similarity-Cosine-green)
 ![Sastrawi](https://img.shields.io/badge/NLP-Sastrawi-lightgrey)
 
-Sistem IR berbasis **Command-Line Interface (CLI)** yang menggabungkan lima dataset Indonesia dan menerapkan *Vector Space Model (VSM)* serta *Cosine Similarity* untuk melakukan ranking hasil pencarian secara akurat.
+Sistem IR berbasis **Command-Line Interface (CLI)** yang menggabungkan lima dataset Indonesia dan menerapkan _Vector Space Model (VSM)_ serta _Cosine Similarity_ untuk melakukan ranking hasil pencarian secara akurat.
 
 ---
 
@@ -36,17 +34,18 @@ Semua proses dijalankan dari terminal (CLI), mulai dari preprocessing dataset, i
 
 ```mermaid
 flowchart LR
-  A([Dataset Mentah (5 CSV)]) --> B([Pra-Pemrosesan<br/>clean_dataset.ipynb])
-  B --> C([datasets_format/*.csv])
-  C --> D([Preprocessing<br/>preprocessing.py])
-  D --> E([datasets_clean/*_clean.csv])
-  E --> F([Indexing<br/>Whoosh])
-  F --> G([whoosh_index/])
-  G --> H([VSM<br/>CountVectorizer])
-  H --> I([CLI Query])
-  I --> J([preprocess_query()])
-  J --> K([Cosine Similarity])
-  K --> L([Top-5 Ranking<br/>di Terminal])
+  A([Dataset Mentah (5 CSV)]) --> B(["Pra-Pemrosesan\nclean_dataset.ipynb"])
+  B --> C(["datasets_format/*.csv"])
+  C --> D(["Preprocessing\npreprocessing.py"])
+  D --> E(["datasets_clean/*_clean.csv"])
+  E --> F(["Indexing\nWhoosh"])
+  F --> G(["whoosh_index/"])
+  G --> H(["VSM\nCountVectorizer"])
+  H --> I(["CLI Query"])
+  I --> J(["preprocess_query()"])
+  J --> K(["Cosine Similarity"])
+  K --> L(["Top-5 Ranking\ndi Terminal"])
+
 ```
 
 **Versi ASCII (fallback GitHub tanpa mermaid)**
@@ -222,5 +221,3 @@ Query Bersih: kebijakan pemerintah tanggul inflasi
 
 Proyek ini dikembangkan untuk mata kuliah **Praktikum Penelusuran Informasi – Universitas Syiah Kuala (2025)**.
 Distribusi hanya untuk keperluan akademik.
-
----
