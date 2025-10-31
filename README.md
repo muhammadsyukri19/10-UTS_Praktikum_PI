@@ -1,4 +1,4 @@
-# 🧠 Multi-Dataset Information Retrieval System (CLI-Based)
+# Implementasi Multi-Dataset Information Retrieval System (CLI-Based)
 
 **Praktikum Penelusuran Informasi — Universitas Syiah Kuala (2025)**
 Sistem pencarian teks berbasis _Command-Line Interface (CLI)_ yang menggabungkan lima dataset berbahasa Indonesia dan menerapkan _Vector Space Model (VSM)_ serta _Cosine Similarity_ untuk melakukan ranking hasil pencarian secara akurat.
@@ -63,6 +63,15 @@ UTS_LAB_PI/
 
 ## ⚙️ Cara Menjalankan
 
+Sistem ini menggunakan library berikut:
+
+- Python (>=3.9)
+- pandas
+- whoosh
+- scikit-learn
+- numpy
+- Sastrawi
+
 ### 1. Persiapan Lingkungan
 
 ```bash
@@ -115,18 +124,17 @@ Langkah:
 
 ## 📊 Contoh Hasil Pencarian
 
-Masukkan Query Pencarian Anda: kebijakan pemerintah menanggulangi inflasi
+Masukkan Query Pencarian Anda: politik identitas dan polarisasi media
 
-Ditemukan 214 dokumen relevan (dari 49484 total).
-Ranking selesai dalam 0.1425 detik.
+Ditemukan 8529 dokumen relevan (dari 47432 total).
+Ranking selesai dalam 0.4346 detik.
 
 === TOP 5 HASIL PENCARIAN (Cosine Similarity) ===
-[1] Skor: 0.8877 | Judul: Pemerintah Kendalikan Inflasi Lewat Subsidi Energi (KOMPAS)
-[2] Skor: 0.8452 | Judul: Langkah BI Menekan Inflasi Pasca Kenaikan BBM (TEMPO)
-[3] Skor: 0.8139 | Judul: Analisis Kebijakan Fiskal Terhadap Inflasi di Indonesia (ETD_UGM)
-[4] Skor: 0.7912 | Judul: Evaluasi Program Stabilisasi Harga Pangan (ETD_USK)
-[5] Skor: 0.7591 | Judul: Dampak Inflasi pada Sektor Konsumsi Nasional (MOJOK)
-==================================================
+[1] Skor: 0.4356 | Judul: PERAN MEDIA SOSIAL SEBAGAI SARANA SOSIALISASI POLITIK DALAM MENINGKATKAN KESADARAN POLITIK GENERASI Z (STUDI KASUS MAHASISWA UNIVERSITAS SYIAH KUALA) (ETD_USK)
+[2] Skor: 0.4348 | Judul: Analisis Kemitraan Pemerintah Swasta Dalam Pengelolaan Sampah di Kota Pekanbaru (ETD_UGM)
+[3] Skor: 0.3350 | Judul: PENGARUH IKLAN POLITIK DI MEDIA SOSIAL TERHADAP PERILAKU PEMILIH MASYARAKAT KOTA MEDAN DALAM PEMENANGAN BOBBY NASUTION -AULIA RACHMAN DI PILKADA TAHUN 2021 (ETD_USK)
+[4] Skor: 0.3291 | Judul: Strategi Kampanye Partai Kebangkitan Bangsa Melalui Media Sosial Facebook Pada Pemilu 2019 Dan Implikasi Terhadap Ketahanan Partai Politik (Studi Pada Media Sosial Facebook Dewan Pengurus Wilayah PKB DIY) (ETD_UGM)
+[5] Skor: 0.3267 | Judul: PENGEMBANGAN MEDIA TELUR MISTERI PADA PEMBELAJARAN SEJARAH (ETD_USK)
 Query Bersih: kebijakan pemerintah tanggul inflasi
 ==================================================
 
@@ -135,11 +143,11 @@ Query Bersih: kebijakan pemerintah tanggul inflasi
 | Sumber    | Deskripsi                      | Jumlah Dokumen     |
 | --------- | ------------------------------ | ------------------ |
 | etd_usk   | Skripsi/Tesis USK              | 10.000             |
-| etd_ugm   | Skripsi/Tesis UGM              | 10.000             |
+| etd_ugm   | Skripsi/Tesis UGM              | 7.948              |
 | kompas    | Artikel berita nasional        | 10.000             |
 | tempo     | Artikel berita ekonomi/politik | 10.000             |
 | mojok     | Artikel opini & esai ringan    | 9.484              |
-| **Total** | —                              | **49.484 dokumen** |
+| **Total** | —                              | **47.432 dokumen** |
 
 ## 🧰 Teknologi yang Digunakan
 
@@ -161,7 +169,7 @@ Query Bersih: kebijakan pemerintah tanggul inflasi
 
 ## 📈 Hasil & Evaluasi
 
-- Total dokumen yang berhasil di-index: **49.484**
+- Total dokumen yang berhasil di-index: **47.438**
 - Preprocessing berhasil menghasilkan file bersih bebas karakter anomali.
 - Waktu indexing ±10–15 menit untuk seluruh dataset.
 - Pencarian rata-rata <1 detik setelah index terbentuk.
@@ -178,10 +186,10 @@ Query Bersih: kebijakan pemerintah tanggul inflasi
 
 ## 👥 Tim Pengembang
 
-| Nama                         | NIM | Peran |
-| ---------------------------- | --- | ----- |
-| (Isi sesuai kelompok kalian) |     |       |
+| Nama              | NIM            |
+| ----------------- | -------------- |
+| Muhammad Syukri   | 23081017010060 |
+| Halim Elsa Putra  | 23081017010062 |
+| =M Milan Ramadhan | 23081017010064 |
 
 ## 🏫 Lisensi & Atribusi
-
-Proyek ini dikembangkan untuk kebutuhan akademik mata kuliah **Praktikum Penelusuran Informasi** di **Departemen Informatika, FMIPA, Universitas Syiah Kuala (USK)**.
