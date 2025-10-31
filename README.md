@@ -34,7 +34,7 @@ Semua proses dijalankan dari terminal (CLI), mulai dari preprocessing dataset, i
 
 ```mermaid
 flowchart LR
-  A([Dataset Mentah (5 CSV)]) --> B(["Pra-Pemrosesan\nclean_dataset.ipynb"])
+  A(["Dataset Mentah (5 CSV)"]) --> B(["Pra-Pemrosesan\nclean_dataset.ipynb"])
   B --> C(["datasets_format/*.csv"])
   C --> D(["Preprocessing\npreprocessing.py"])
   D --> E(["datasets_clean/*_clean.csv"])
@@ -45,7 +45,6 @@ flowchart LR
   I --> J(["preprocess_query()"])
   J --> K(["Cosine Similarity"])
   K --> L(["Top-5 Ranking\ndi Terminal"])
-
 ```
 
 **Versi ASCII (fallback GitHub tanpa mermaid)**
